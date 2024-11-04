@@ -1,4 +1,4 @@
-    /* Reset CSS */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,6 @@ nav ul {
 }
 
 nav ul li {
-    float: left;
     display: inline;
 }
 
@@ -56,51 +55,32 @@ nav ul li a:hover {
     background-image: url('https://example.com/foz-do-iguacu.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
-    padding: 100px 20px;
+    color: rgb(15, 14, 14);
+    padding: 65px 30px;
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 3em;
+.hero h2 {
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 1.2em;
-}
-
-.section {
+.info, .charts, .external-links {
     margin: 40px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+h2 {
     color: #000a79;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.card img {
-    max-width: 50%;
-    border-radius: 5px;
-}
-
-.card h3 {
-    margin-top: 15px;
-    font-size: 1.5em;
-    color: #333;
-}
-
-.card p {
-    margin: 15px 0;
+.external-links a {
+    display: block;
+    margin: 10px 0;
+    color: #000a79;
 }
 
 footer {
@@ -110,73 +90,19 @@ footer {
     padding: 20px;
 }
 
-.footer-links {
-    margin-bottom: 20px;
+/* Estilo do modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 
-.footer-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+body.dark-mode a {
+    color: #bb86fc;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.pagination {
+/* Estilo do botão de alternância */
+.theme-toggle {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
-}
-
-.pagination a {
-    color: white;
-    background-color: #000a79;
-    padding: 10px 20px;
-    margin: 0 5px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.pagination a:hover {
-    background-color: #000a79;
-}
-
-/* Centralização da seção embed */
-.embed-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-
-/* Responsividade */
-@media (max-width: 150px) {
-    nav ul li {
-        float: none;
-        width: 100%;
-    }
-
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    
-}
-
-button {
-    background-color: #2e557e;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+    margin: 1em 0;
 }
